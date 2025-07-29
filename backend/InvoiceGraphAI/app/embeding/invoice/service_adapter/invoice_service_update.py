@@ -1,0 +1,21 @@
+import requests
+import json
+
+url = "https://dev-api-corpit.ipc.com:8014/data/Invoice/v1/Search"
+
+payload = json.dumps({
+  "InvoiceNumber": "",
+  "CustomerID": 66184,
+  "BillToAccounts": [],
+  "Site": [],
+  "Region": None,
+  "OutStandingInvoicesFlag": False
+})
+headers = {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkNOdjBPSTNSd3FsSEZFVm5hb01Bc2hDSDJYRSIsImtpZCI6IkNOdjBPSTNSd3FsSEZFVm5hb01Bc2hDSDJYRSJ9.eyJhdWQiOiJodHRwczovL2lwY3N5c3RlbXMub25taWNyb3NvZnQuY29tL2FwaS9wbWFwaXNlcnZpY2UtcHJvZDo4MTQwMWI2Zi01ODNkLTQxMTAtYTJlZi1kYTc5MGYxOTU4ZGMiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC84MTQwMWI2Zi01ODNkLTQxMTAtYTJlZi1kYTc5MGYxOTU4ZGMvIiwiaWF0IjoxNzQzNzg3OTcxLCJuYmYiOjE3NDM3ODc5NzEsImV4cCI6MTc0Mzc5MTg3MSwiYWlvIjoiazJSZ1lQQlpjbGtrSzBma3pVNkRnNXh2RHJFV0F3QT0iLCJhcHBpZCI6ImI0OWM0MWJjLWVhOGItNDMwMC05ZDM4LTdjOWQwNThjZjlkNCIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzgxNDAxYjZmLTU4M2QtNDExMC1hMmVmLWRhNzkwZjE5NThkYy8iLCJvaWQiOiJhZDUxMmQ5OC1lZjNiLTQxZTEtYTNlMy0yZmEyYzRiOTNjZTMiLCJyaCI6IjEuQVhZQWJ4dEFnVDFZRUVHaTc5cDVEeGxZM0x4Qm5MU0w2Z0JEblRoOG5RV00tZFMwQUFCMkFBLiIsInN1YiI6ImFkNTEyZDk4LWVmM2ItNDFlMS1hM2UzLTJmYTJjNGI5M2NlMyIsInRpZCI6IjgxNDAxYjZmLTU4M2QtNDExMC1hMmVmLWRhNzkwZjE5NThkYyIsInV0aSI6IlRydzdzM2Qtc0VtVHFMMUdzeUlMQUEiLCJ2ZXIiOiIxLjAifQ.OsO5ndMC3fs5KsWb1dRWiAjIPandSFsVAJLA-EMtY9Jande35h7FD6sLBnLrr_wWoqRV9Sv_JtWfGM2_Q6HzDNkfFODO_AmxNZ5HM5I9SDkcuUE0F74Svx6_2ulB6pGXpRd3cVB7eiuLyTwX3MPJFtyz627nFJi9WkqRGwlpfMb-vSQFUUeJZOeWs8Y00yye6J2Uooduy-XZ8CK0yFRYcHJ9Y1DvQ4pZtJUR5wj_y1ZkKuJlf9Ci6YL-joht0Jk3-RDF1ck4EHMl2ke-PdKZ_2M3zcVuHUbl67L3MborRazoABjFxOi98FTYX2UnpVFUm8H9eNp0V-IgRTTsUMXFvw'
+}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)

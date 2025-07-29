@@ -1,0 +1,79 @@
+[
+  {
+    "invoice_number": "INV-2023-001",
+    "account_name": "Acme Corporation",
+    "circuit_id": "CIRC-001",
+    "account_number": "ACME-001",
+    "date": "2023-01-15",
+    "amount": 1250.00,
+    "currency": "USD",
+    "status": "paid",
+    "service_type": "Dedicated Fiber"
+  },
+  {
+    "invoice_number": "INV-2023-002",
+    "account_name": "Globex International",
+    "circuit_id": "CIRC-002",
+    "account_number": "GLBX-001",
+    "date": "2023-02-20",
+    "amount": 890.50,
+    "currency": "EUR",
+    "status": "paid",
+    "service_type": "MPLS Network"
+  },
+  {
+    "invoice_number": "INV-2023-003",
+    "account_name": "Acme Corporation",
+    "circuit_id": "CIRC-003",
+    "account_number": "ACME-002",
+    "date": "2023-03-10",
+    "amount": 2100.00,
+    "currency": "USD",
+    "status": "pending",
+    "service_type": "Cloud Connection"
+  },
+  {
+    "invoice_number": "INV-2023-004",
+    "account_name": "Tech Solutions Ltd",
+    "circuit_id": "CIRC-004",
+    "account_number": "TECH-001",
+    "date": "2023-04-05",
+    "amount": 1500.00,
+    "currency": "GBP",
+    "status": "paid",
+    "service_type": "IP Transit"
+  },
+  {
+    "invoice_number": "INV-2023-005",
+    "account_name": "Data Systems Inc",
+    "circuit_id": "CIRC-005",
+    "account_number": "DATA-001",
+    "date": "2023-05-15",
+    "amount": 3200.75,
+    "currency": "USD",
+    "status": "overdue",
+    "service_type": "Dark Fiber"
+  },
+  {
+    "invoice_number": "INV-2023-006",
+    "account_name": "Telecom Partners",
+    "circuit_id": "CIRC-006",
+    "account_number": "TEL-001",
+    "date": "2023-06-22",
+    "amount": 1750.00,
+    "currency": "USD",
+    "status": "paid",
+    "service_type": "Dedicated Fiber"
+  },
+  {
+    "invoice_number": "INV-2023-007",
+    "account_name": "Acme Corporation",
+    "circuit_id": "CIRC-007",
+    "account_number": "ACME-003",
+    "date": "2023-07-30",
+    "amount": 4200.00,
+    "currency": "USD",
+    "status": "pending",
+    "service_type": "MPLS Network"
+  }
+]
