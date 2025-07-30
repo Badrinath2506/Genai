@@ -7,10 +7,10 @@ from decimal import Decimal
 # Connection string
 connection_string = (
     "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=sqlmi-eu-prod-dbapp-01.704a0fbed2b5.database.windows.net;"
-    "DATABASE=orion2;"
-    "UID=sqladmin;"
-    "PWD=sqlpower;"
+    "SERVER=;"
+    "DATABASE=sadsa;"
+    "UID=sads;"
+    "PWD=sadsa;"
 )
 
 # Connect to the database
